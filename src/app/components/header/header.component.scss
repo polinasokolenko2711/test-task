@@ -1,0 +1,21 @@
+:host{
+    width: 100%;
+}
+.header {
+    height: 40px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 1px solid #010101;
+}
+
+.online{
+    font-weight: 800;
+    color: green;
+}
+
+.offline{
+    font-weight: 800;
+    color: red;
+}
+

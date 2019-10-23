@@ -1,0 +1,4 @@
+<div class="header">
+    <span *ngIf="isUserLoggedIn$ | async" class="online">User is online and logged in</span>
+    <span *ngIf="!(isUserLoggedIn$ | async)" class="offline">Offline </span>
+</div>

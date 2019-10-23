@@ -1,0 +1,58 @@
+$blue: #3b55fd;
+$green: #42cf8f;
+$dark-green: #1f5a3c;
+$warn: #f44336;
+$dark-warn: #5f1a16;
+$dark: #000;
+$dark-back: #292929;
+$light: #fffdc3;
+$light-blue: #a3bdce;
+$purple-back: #3f0d5c;
+$light-purple: #c08edd;
+
+
+.accent {
+  color: $blue;
+}
+
+.text-success {
+  color: $green;
+}
+
+.text-warn {
+  color: $warn;
+}
+
+.text-primary {
+  color: $blue;
+}
+
+$themes: (
+  light: (
+    backgroundColor: white,
+    textColor: $blue,
+    subTitleColor: $dark-back,
+    buttonColor: white,
+    primaryBtnColor: $green,
+    selectBack: $light-blue,
+    selectColor: black,
+  ),
+  dark: (
+    backgroundColor: $dark-back,
+    textColor: white,
+    subTitleColor: $light-blue,
+    buttonColor: white,
+    primaryBtnColor: $dark-green,
+    selectBack: $dark-warn,
+    selectColor: white,
+  ),
+  purple: (
+    backgroundColor: $purple-back,
+    textColor: white,
+    subTitleColor: $light-purple,
+    buttonColor: white,
+    primaryBtnColor: $dark-green,
+    selectBack: $dark-warn,
+    selectColor: white,
+  ),
+);

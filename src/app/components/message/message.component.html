@@ -1,0 +1,8 @@
+<div class="default-section">
+    <div class="messages-wrapper">
+        <input placeholder="Search" #searchInput (input)="inputValue()">
+        <ng-container *ngIf="searchInput.value">
+            <div class="message-item" *ngFor="let item of searchMessages(searchInput.value) | async">{{item.text}}</div>
+        </ng-container>
+    </div>
+</div>

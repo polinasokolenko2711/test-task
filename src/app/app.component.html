@@ -1,0 +1,10 @@
+<main [ngClass]="currentTheme">
+    <select class="theme-change" [ngModel]="currentTheme" (ngModelChange)="onThemeChange($event)" >
+        <option *ngFor="let theme of themes;" [ngValue]="theme">
+            {{theme}}
+        </option>
+    </select>
+    <app-header></app-header>
+    <app-number-counter></app-number-counter>
+    <app-message></app-message>
+</main>
